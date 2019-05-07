@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>게임속으로~!</title>
+	<style type="text/css">
+		.wrap{width: 1000px; margin: auto;}
+		section{width : 1000px; position: relative; margin: auto;}
+		.section1{background: url('1.jpg');  background-size: cover; width: 1000px; height: 750px; overflow: hidden;}
+		.section2{width: 1000px;}
+
+		.bone{display : block; position: absolute; top: 50px; left: -120px; overflow: hidden;}
+		.boom{display : block; position: absolute; top: 150px; right: 230px; transition: all 0.1s;}
+		.boom:hover{transform:rotate(-45deg);}
+		.glider{display: block;position: absolute;top: 430px; right: 50px; z-index: 1; animation: ro 1s infinite  linear alternate;}
+		.gun1{display: block;position: absolute;top: 150px; right: 150px; width: 50px;}
+		.gun2{display: block;position: absolute;top: 250px; left: 150px; width: 200px;}
+
+		
+		.bot{display: block;position: absolute; top: -230px; width: 1000px;}
+		.run{display: block;position: absolute; top: -20px; left: 70px;z-index: 1}
+		.run:hover{transform: rotate(-10deg);}
+		.tan{display: block;position: absolute;top: 100px; right: 50px; width: 250px; animation: lo 1s infinite  linear ;}
+		.bot2{display: block;position: absolute; top: 330px; width: 1000px; z-index: 0;}
+		.sniper{display: block;position: absolute; bottom : -950px;right: -90px; width: 400px;}
+		.bang{display: block;position: absolute; bottom : -700px;right: 200px; width: 250px;}
+		.bang:hover{ animation: so 0.5s infinite  linear ;}
+
+
+		.gun3{display: block;position: absolute;top: 250px; left: 400px; width: 100px; z-index: 3;}
+		.gun4{display: block;position: absolute;top: 300px; left: 40px; width: 230px; z-index: 3; opacity:0;}
+		.gun4:hover{opacity:100; }
+		.gun5{display: block;position: absolute;top: 100px; left: 150px; width: 80px; z-index: 3;}
+
+		.gun6{display: block;position: absolute;top: -180px; left: 340px; width: 100px; z-index: 3;opacity:0; }
+		.gun6:hover{opacity:100; }
+
+		.gun7{display: block;position: absolute;top: 630px; left: 240px; width: 180px; z-index: 3; animation: po 1s infinite  linear ;}
+
+		@keyframes ro{
+			to{ transform: translateY(-10%) rotate(-10deg); }
+		}
+		@keyframes lo{
+			to{ transform: rotate(360deg); }
+
+		}
+		@keyframes so{
+			to{ transform: rotate(60deg); width: 400px; }
+		}
+		@keyframes po{
+			to{opacity:0; }
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<section class="section1">
+			<img src="5.png" class="bone">
+			<img src="7.png" class="boom">
+			<img src="12.png" class="glider">
+			<img src="10.png" class="gun1">
+			<img src="10.png" class="gun2">
+		</section>
+		<section class="section2">
+			<img src="11.png" class="bot">
+			<img src="2.png" class="run">
+			<img src="6.png" class="tan">
+			<img src="14.jpg" class="bot2">
+			<img src="3.png" class="sniper">
+			<img src="15.png" class="bang">
+			<img src="10.png" class="gun3">
+			<img src="10.png" class="gun4">
+			<img src="10.png" class="gun5">
+			<img src="10.png" class="gun6">
+			<img src="10.png" class="gun7">
+		</section>
+	</div>
+</body>
+</html>
